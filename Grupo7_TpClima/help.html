@@ -8,13 +8,19 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/help.css">
+    <script src="https://kit.fontawesome.com/a994bbc6c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <h1>
-            <span>Clima App</span>
-        </h1>
+        <div class="icon">
+
+            <img src="img/clima_icon.png">
+            <h1>
+                <span>Clima App</span>
+            </h1>
+
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Clima</a></li>
@@ -28,17 +34,27 @@
         <h2>Ayuda Clima App v.1.0</h2>
         <p>Esta app te permite consultar el clima de una ciudad en particular utilizando la API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>.</p>
         <p>Para poder consultar el clima, primero debera <a href="add_city.html">agregar una ciudad</a> y luego seleccionar la Ciudad en cuestion desde la pagina <a href="index.html">Clima</a>.</p>
-        <section id="form-city-list">
-            <!-- Sección donde se debe colocar el formulario, con el select y el
-botón de consultar -->
-        </section>
-        <section id="section-weather-result">
-            <!-- Sección donde se debe mostrar el clima de la ciudad -->
-        </section>
+        
+        <div class="form_mail">
+            <section id="form">
+
+                <form class="formulario">
+
+                        <label for="name">Nombre:</label>
+                        <input id="name" type="text" name="name" size="25px"> <br>
+                        <label for="email">Email:</label> 
+                        <input id="email" type="email" name="email" size="25px"><br>
+                        <label for="coment">Mensaje:</label>
+                        <textarea rows="8" cols="30"></textarea>
+                        <input type="reset" value="Limpiar">
+                        <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <p>
-            Desarrollado con ♥ - LC2 
+            Desarrollado con ♥ - LC2 - Grupo 7
         </p>
     </footer>
 </body>
