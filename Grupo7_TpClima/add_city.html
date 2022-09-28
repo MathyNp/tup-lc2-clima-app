@@ -33,13 +33,36 @@
         <h2>Agregar Ciudad</h2>
         <section>
             <form class="formAgCiudad">
+            <div id="ingcity">
             <label for="AgCiudad">
                 Ingrese la ciudad a agregar:
             </label>
+            </div>
+            <div id="agcity">
             <input id="AgCiudad" type="text" name="AgCiudad">
+            </div>
+            <div id="ag">
             <input type="submit" value="Agregar">
+            </div>
         </form>
         </section>
+
+        <div id="green" class="cent">
+            <p>
+                Ciudad agregada con exito.
+            </p>
+        </div>
+        <div id="red" class="cent">
+            <p>
+                Error: La ciudad consultada no se encuentra en la API o se produjo un error al consultar
+            </p>
+        </div>
+        <div id="yellow" class="cent">
+            <p>
+                La ciudad ingresada ya se encuentra almacenada.
+            </p>
+        </div>
+
     </main>
     <footer>
         <p>

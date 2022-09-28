@@ -1,3 +1,12 @@
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #00594c;
+    --color-active: #5df2d6;
+    --color-back-active: #04957d;
+    --color-gradient: linear-gradient(to right, var(--color-theme),
+var(--color-back-active));
+}
+
 *
 {
     font-weight: bold;
@@ -7,4 +16,62 @@
 {
     width: 370px;
     margin: auto;
+}
+
+.borders-box
+{
+    border: 1.5px solid black;
+    border-radius: 6px;
+    margin-top: 0px;
+    width: 320px;
+    height: 40px;
+}
+
+.borders-box-b
+{
+    border: 1.5px solid black;
+    border-radius: 6px;
+    margin-top: 0px;
+    width: 320px;
+}
+
+
+#botones
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton_green
+{
+    background-color: var(--color-theme);
+    border-radius: 8px;
+    padding: 5px;
+    border: none;
+    color: white;
+    font-size: 13px;
+    height: 37px;
+    width: 90px;
+    margin: 5px;
+}
+
+#red p
+{
+    background-color: #dc3545;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
+    border-radius: 15px;
+    width: 36%;
+    height: 50px;
+}
+
+#red
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
 }

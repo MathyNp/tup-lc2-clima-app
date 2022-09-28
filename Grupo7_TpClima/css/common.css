@@ -15,6 +15,11 @@
 var(--color-back-active));
 }
 
+nav
+{
+    margin-top: 5px;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -36,8 +41,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
     align-items: center;
+    border-radius: 0 0 30px 30px;
+    border-bottom: #5df2d6 3px solid;
 }
 
 nav>ul {
@@ -49,6 +56,7 @@ nav>ul {
 nav li {
     flex:
         0 0 auto;
+        
 }
 
 nav li a {
@@ -65,6 +73,7 @@ nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-radius: 15px 15px 0 0;
 }
 
 main {
@@ -81,10 +90,6 @@ h1 {
     color: white;
 }
 
-h1>img {
-    width: 70px;
-    vertical-align: middle;
-}
 
 h2 {
     color: var(--color-theme);
@@ -105,11 +110,12 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background: var(--color-gradient);
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-top: #5df2d6 3px solid;
 }
 
 footer p {
@@ -119,6 +125,20 @@ footer p {
 
 main p {
         margin-bottom: 16px;
+    }
+
+    .icon
+    {
+     display: flex;
+     text-align: center;
+     justify-content: center;
+    }
+ 
+    .icon img
+    {
+     height: 50px;
+     margin: 3px;
+ 
     }
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
@@ -134,16 +154,4 @@ main p {
         }
     }
 
-   .icon
-   {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-   }
-
-   .icon img
-   {
-    height: 50px;
-    margin: 3px;
-
-   }
+ 

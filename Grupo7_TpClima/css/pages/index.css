@@ -1,9 +1,56 @@
-.card p
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #00594c;
+    --color-active: #5df2d6;
+    --color-back-active: #04957d;
+    --color-gradient: linear-gradient(to right, var(--color-theme),
+var(--color-back-active));
+}
+
+*
 {
     font-weight: bold;
 }
 
-.fa-regular fa-sun-dust {
-    color: aliceblue;
+#cons
+{
+    background-color: var(--color-theme);
+    border-radius: 8px;
+    padding: 8px;
+    border: none;
+    color: white;
+    font-size: 13px;
+    height: 37px;
+    width: 110px;
+    margin-left: 0px;
 }
 
+#ciudad
+{
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px;
+    border: solid 0,5px;
+    color: black;
+    font-size: 13px;
+    width: 200px;
+    height: 40px;
+}
+
+.card
+{
+    border-radius: 25px;
+    box-shadow: 2px 2px 13px black;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    width: 275px;
+
+}
+
+.card p
+{
+    font-size: 13px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
